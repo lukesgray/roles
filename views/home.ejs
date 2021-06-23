@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+
+<body>
+    <h1>Home</h1>
+    <% if (username) { %>
+        <h2><%= username  %>  is currently logged in as a(n) <%= role %></h2>
+    <% } %> 
+
+    <h3>User Registration and Login</h3>
+    <a href="/register">Register</a>
+    <a href="/login">Login</a>
+
+    <h3>Admin Registration and Login</h3>
+    <a href="/registerAdmin">Register Admin</a>
+    <a href="/loginAdmin">Login Admin</a>
+
+    <h3>Site Actions</h3>
+    <div>
+        <a href="/rentMovie">Rent a Movie</a>
+    </div>
+
+    <div>
+        <a href="/rentShow">Rent a Show</a>
+    </div>
+
+    <div>
+        <a href="/rentMovieHD">Rent a Movie in HD</a>
+    </div>
+    <div>
+        <a href="/rentShowHD">Rent a Show in HD</a>
+    </div>
+
+    <div>
+        <a href="/editMovies">Edit Movies</a>
+    </div>
+    <div>
+        <a href="/editShows">Edit Shows</a>
+    </div>
+    <div>
+        <a href="/changeCustomerRoles">Change Customer Roles</a>
+    </div>
+
+    <div>
+        <a href="/removeAdmin">Remove Admin</a>
+    </div>
+
+    <h2>John - user</h2>
+    <div>Password: password1</div>
+    
+    <h2>Sam - member</h2>
+    <div>password: password2</div>
+    
+    <h2>Sue - memberPlus</h2>
+    <div>Password: password3</div>
+
+    <h2>Adam - admin</h2>
+    <div>Password: password4</div>
+
+    <h2>Sarah - headAdmin</h2>
+    <div>Password: password5</div>
+
+</body>
+
+</html>
